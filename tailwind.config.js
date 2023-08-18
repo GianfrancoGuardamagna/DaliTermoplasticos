@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        museo: ['var(--font-museo)'],
+        tusker: ['var(--font-tusker)'],
+      },
+      colors: {
+        fepGreen: '#499F83',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -15,4 +22,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
