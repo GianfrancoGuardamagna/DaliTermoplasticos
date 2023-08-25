@@ -1,3 +1,4 @@
+import { MdLocalPhone, MdMail } from 'react-icons/md'
 import DropdownNavbar from "./DropdownNavbar"
 import Navbar from "./Navbar"
 
@@ -6,20 +7,32 @@ import Navbar from "./Navbar"
 const Header = () => {
     const icons = ['/public/icon_instagram.svg', '/public/icon_facebook.svg']
     return (
-        <header className='sticky top-0 z-10 w-screen h-20 py-2 px-6 md:h-28 md:px-8 flex justify-between items-center font-museo text-4xl md:text-white  md:bg-black'>
+        <header className='w-screen sticky top-0 z-10 flex flex-col'>
 
-            <a href='#landing'
-                className="w-1/4 md:w-2/12 h-full bg-[url(/logo_reduccion.png)] md:bg-[url(/logo.png)] bg-contain bg-no-repeat bg-start " />
-
-            <div className="w-1/4 h-full flex items-center justify-end md:w-8/12 md:mb-6">
-                <Navbar />
-                <DropdownNavbar />
+            <div className='h-8 p-2 flex items-center justify-center gap-10 bg-black text-white text-sm md:hidden'>
+                <div className='flex items-center gap-1'>
+                    <MdLocalPhone /><span>0223 481-4490</span>
+                </div>
+                <div className='flex items-center gap-1'>
+                    <MdMail /><span>fep@gmail.com</span>
+                </div>
             </div>
 
-            <div className="hidden h-full w-1/12 mb-6 md:flex justify-end items-end gap-2">
-                <a href='' className='w-9 h-9'><img src='/icon_instagram.svg' alt='insta' /></a>
-                <a href='' className='w-9 h-9'><img src='/icon_facebook.svg' alt='face' /></a>
+            <div className="h-20 py-2 px-6 flex justify-between items-center bg-white font-museo md:h-28 lg:px-8 md:text-white md:bg-black">
+                <a href='#landing'
+                    className="h-full w-1/4 md:w-2/12 bg-[url(/logo_reduccion.png)] sm:bg-[url(/logo.png)] bg-contain bg-no-repeat bg-start md:bg-center" />
+
+                <div className="h-full w-1/4 md:w-9/12 flex items-center justify-center md:pb-4 lg:pb-3">
+                    <Navbar />
+                    <DropdownNavbar />
+                </div>
+
+                <div className="hidden h-full w-1/12 md:flex md:justify-end md:items-end md:gap-2 md:pb-3">
+                    <a href='' className='w-9 h-9 flex items-center'><img src='/icon_instagram.svg' alt='insta' /></a>
+                    <a href='' className='w-9 h-9 flex items-center'><img src='/icon_facebook.svg' alt='face' /></a>
+                </div>
             </div>
+
         </header>
     )
 }

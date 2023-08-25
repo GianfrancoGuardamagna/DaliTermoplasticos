@@ -22,7 +22,7 @@ const DropdownNavbar = () => {
     return (
         <div className="md:hidden">
 
-            <div className='curson pointer' onClick={() => setIsMenuOpen(!isMenuOpen)}>☰</div>
+            <div className='curson pointer text-4xl' onClick={() => setIsMenuOpen(!isMenuOpen)}>☰</div>
 
             {isMenuOpen && (
                 <div className='absolute left-0 w-full mt-4 bg-white'>
