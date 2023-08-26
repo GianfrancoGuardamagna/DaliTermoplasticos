@@ -15,13 +15,17 @@ const DropdownNavbar = () => {
         const section = document.getElementById(value);
         if (section) {
             setIsMenuOpen(!isMenuOpen)
-            section.scrollIntoView({ behavior: 'smooth' })
+            const offset = 112;
+            const topPosition = section.offsetTop;
+            window.scrollTo({
+                top: topPosition - offset,
+                behavior: 'smooth'
+            })
         }
     };
 
     return (
         <div className="md:hidden">
-
             <div className='curson pointer text-4xl' onClick={() => setIsMenuOpen(!isMenuOpen)}>☰</div>
 
             {isMenuOpen && (

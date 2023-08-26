@@ -7,15 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontSize: {
-        vw: 'calc(10px + 2vw)',
-      },
       fontFamily: {
         museo: ['var(--font-museo)'],
         tusker: ['var(--font-tusker)'],
       },
       colors: {
         fepGreen: '#499F83',
+        fepPink: '#EA33F7',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
