@@ -11,7 +11,7 @@ const Navbar = () => {
         event.preventDefault();
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
-            const offset = 100;
+            const offset = 112;
             const topPosition = targetElement.offsetTop;
             window.scrollTo({
                 top: topPosition - offset,

@@ -18,7 +18,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className="h-20 py-2 px-6 flex justify-between items-center bg-white font-museo md:h-28 lg:px-8 md:text-white md:bg-black">
+            <div className="h-20 md:h-28 py-2 px-6 flex justify-between items-center bg-white font-museo lg:px-8 md:text-white md:bg-black">
                 <a href='#landing'
                     className="h-full w-1/4 md:w-2/12 bg-[url(/logo_reduccion.png)] sm:bg-[url(/logo.png)] bg-contain bg-no-repeat bg-start md:bg-center" />
 

@@ -7,9 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontSize: {
-        vw: 'calc(10px + 2vw)',
-      },
       fontFamily: {
         museo: ['var(--font-museo)'],
         tusker: ['var(--font-tusker)'],

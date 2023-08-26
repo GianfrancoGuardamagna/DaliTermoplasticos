@@ -6,7 +6,7 @@ export default function Home() {
       <section id='landing' className='w-screen h-screen bg-indigo-400'>
         <h2>Home</h2>
       </section>
-      <section id='nosotros' className='w-screen h-screen bg-cyan-400'>
+      <section id='nosotros' className='w-screen h-screen'>
         <Nosotros />
       </section>
 
