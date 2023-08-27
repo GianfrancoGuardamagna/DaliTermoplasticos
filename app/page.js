@@ -1,11 +1,12 @@
+import Landing from './components/Landing';
 import Nosotros from './components/Nosotros';
 import Sustentabilidad from './components/Sustentabilidad';
 
 export default function Home() {
   return (
     <main className=''>
-      <section id='landing' className='w-screen h-screen bg-indigo-400'>
-        <h2>Home</h2>
+      <section id='landing' className='w-screen h-screen'>
+        <Landing />
       </section>
       <section id='nosotros' className='w-screen h-screen'>
         <Nosotros />
