@@ -2,7 +2,7 @@
 const Nosotros = () => {
     return (
         <>
-            <h1 className='flex justify-center mt-4 font-museo text-4xl md:hidden'>Nosotros</h1>
+            <h1 className='flex justify-center pt-4 font-museo text-4xl md:hidden'>Nosotros</h1>
             <div className='flex flex-col mx-auto w-[90%] sm:w-[80%] md:w-[95%] h-[calc(100vh-112px)] md:flex-row md:items-center md:gap-6 md:py-8'>
                 <div className="w-full md:w-1/2 h-[50%] md:h-full xl:h-[80%] flex justify-center items-center my-4 rounded-xl bg-fepGreen">
                     Imagen Fabrica
