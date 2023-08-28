@@ -51,6 +51,7 @@ const Carousel = () => {
                 {carouselImages.map((carouselImage, index) => {
                     return (
                         <div
+                            key={index}
                             onClick={() => { setCurrentIndex(index) }}
                             className={index === currentIndex ? 'w-4 h-4 rounded-full  bg-fepGreen' : 'w-4 h-4 rounded-full border-2 border-fepGreen'}
                         />
