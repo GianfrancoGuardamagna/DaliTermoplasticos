@@ -34,7 +34,7 @@ const Header = () => {
                 <a
                     href='#landing'
                     onClick={(event) => handleClick(event)}
-                    className="h-full w-1/4 md:w-2/12 bg-[url(/logo_reduccion.png)] sm:bg-[url(/logo.png)] bg-contain bg-no-repeat bg-start md:bg-center" />
+                    className="h-full w-1/4 md:w-2/12 bg-[url(/logo_reduccion.png)] sm:bg-[url(/logo_negro.png)] md:bg-[url(/logo_blanco.png)] bg-contain bg-no-repeat bg-start md:bg-center" />
 
                 <div className="h-full w-1/4 md:w-9/12 flex items-center justify-center md:pb-4 lg:pb-3">
                     <Navbar />
