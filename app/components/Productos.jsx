@@ -1,37 +1,12 @@
 'use client'
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { MdNavigateNext, MdNavigateBefore, MdClose } from 'react-icons/md'
 /* import '../scrollbar.css' */
 
 
-const Productos = () => {
-    const products = [
-        {
-            title: 'Producto 1',
-            image: '/carousel/c-img3.png'
-        },
-        {
-            title: 'Producto 2',
-            image: '/carousel/c-img2.png'
-        },
-        {
-            title: 'Producto 3',
-            image: '/carousel/c-img1.png'
-        },
-        {
-            title: 'Producto 4',
-            image: '/carousel/c-img3.png'
-        },
-        {
-            title: 'Producto 5',
-            image: '/carousel/c-img2.png'
-        },
-        {
-            title: 'Producto 6',
-            image: '/carousel/c-img1.png'
-        }
-    ]
+const Productos = ({ products }) => {
+
     const [modalOpen, setModalOpen] = useState(false)
     const [selectedImageIndex, setSelectedImageIndex] = useState(0)
 
@@ -52,19 +27,34 @@ const Productos = () => {
         setSelectedImageIndex((prevIndex) => prevIndex === products.length - 1 ? 0 : prevIndex + 1)
     }
 
-    return (
-        <div className='w-full h-full flex flex-col'>
-            <h1 className='flex justify-center font-museo text-4xl pt-4 md:hidden'>Productos</h1>
+    useEffect(() => {
+        const handleEscapeKey = (event) => {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        };
 
-            <div className="w-[80%] h-[80%] md:h-auto mx-auto my-4 md:my-16 px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 overflow-y-scroll">
+        if (modalOpen) {
+            window.addEventListener('keydown', handleEscapeKey);
+        }
+
+        return () => {
+            window.removeEventListener('keydown', handleEscapeKey);
+        };
+    }, [modalOpen]);
+
+    return (
+
+        <section className='min-h-[calc(100vh-192px)] md:min-h-[calc(100vh-152px)]'>
+            <div className="w-[85%] mx-auto py-8 md:py-16 flex flex-wrap justify-center md:justify-center items-start gap-4">
                 {products.map((product, index) => (
-                    <div key={index} className='w-full h-[200px] cursor-pointer relative' onClick={() => openModal(index)}>
+                    <div key={index} className='w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] cursor-pointer relative' onClick={() => openModal(index)}>
                         <Image src={product.image} alt={product.title} fill sizes='w-full' className="rounded-3xl object-cover object-center" />
                     </div>
                 ))}
             </div>
             {modalOpen && (
-                <div className="fixed top-[112px] lest-0 w-screen h-screen flex justify-center bg-black bg-opacity-80">
+                <div className="fixed top-[112px] left-0 w-screen h-screen flex justify-center bg-black bg-opacity-80">
                     <div className="bg-white h-[65%] lg:h-[75%] mt-6 p-4 rounded-lg overflow-hidden w-[90%] sm:w-[90%] md:w-[60%]">
                         <div className="h-full flex flex-col justify-between">
                             <div className="w-full flex justify-end text-fepGreen" >
@@ -89,9 +79,9 @@ const Productos = () => {
                 </div>
             )}
 
+        </section>
 
 
-        </div>
     )
 }
 

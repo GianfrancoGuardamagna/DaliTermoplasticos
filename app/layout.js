@@ -4,6 +4,7 @@ import './globals.css';
 import localFont from 'next/font/local';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 const museo = localFont({
   src: '../public/fonts/Museo.ttf',
@@ -24,7 +25,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={`${museo.variable}  ${tusker.variable}`}>
-        <Header />
         {children}
         <Footer />
       </body>

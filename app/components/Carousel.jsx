@@ -26,25 +26,25 @@ const Carousel = () => {
     }, []);
 
     return (
-        <div className='w-full md:w-[90%] h-[85%] md:mx-auto rounded-3xl relative md:flex md:justify-center bg-fepGreen'>
+        <div className='w-full h-[90%] md:h-[85%] relative md:flex md:justify-center'>
 
             <Image
                 alt={`Image ${currentIndex}`}
                 src={carouselImages[currentIndex]}
                 fill={true}
                 sizes='w-full'
-                className='object-contain sm:object-cover sm:rounded-3xl'
+                className='object-cover'
             />
 
             <span
                 onClick={handlePrev}
-                className='hidden md:block md:absolute md:top-[calc(50%-30px)] md:-right-14 text-fepGreen'>
-                <MdNavigateNext size={60} />
+                className='hidden md:block md:z-10 md:absolute md:top-[calc(50%-30px)] md:right-2 text-fepGreen'>
+                <MdNavigateNext size={90} />
             </span>
             <span
                 onClick={handlePrev}
-                className='hidden md:block md:absolute md:top-[calc(50%-30px)] md:-left-14 text-fepGreen'>
-                <MdNavigateBefore size={60} />
+                className='hidden md:block md:absolute md:top-[calc(50%-30px)] md:left-2 text-fepGreen'>
+                <MdNavigateBefore size={90} />
             </span>
 
             <div className='hidden md:absolute md:-bottom-6 md:flex md:gap-6'>

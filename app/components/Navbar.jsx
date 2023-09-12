@@ -1,9 +1,36 @@
 'use client'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
 
     const [activeSection, setActiveSection] = useState('');
+
+    const handleIntersection = (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                setActiveSection(entry.target.id);
+            }
+        });
+    };
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(handleIntersection, {
+            rootMargin: "0px",
+            threshold: 0.7, // Adjust this threshold as needed
+        });
+
+        // Observe the sections
+        observer.observe(document.getElementById("landing"));
+        observer.observe(document.getElementById("nosotros"));
+        observer.observe(document.getElementById("productos"));
+        observer.observe(document.getElementById("sustentabilidad"));
+        observer.observe(document.getElementById("contacto"));
+
+        // Clean up the observer when the component unmounts
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
 
     const handleNavClick = (event, targetId) => {
         event.preventDefault();

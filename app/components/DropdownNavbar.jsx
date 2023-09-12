@@ -29,20 +29,20 @@ const DropdownNavbar = () => {
             <div className='curson pointer text-4xl' onClick={() => setIsMenuOpen(!isMenuOpen)}>☰</div>
 
             {isMenuOpen && (
-                <div className='absolute left-0 w-full mt-4 bg-white'>
-                    {options.map((option, index) => (
-                        <div
-                            key={index}
-                            className="m-4 flex justify-start items-center  bg-white text-fepGreen text-2xl  curson pointer "
-                            onClick={() => handleOptionClick(option.value)}
-                        >
-                            {option.label}
-                        </div>
-                    ))}
+                <div className='absolute left-0 w-full h-screen mt-4 bg-black bg-opacity-80'>
+                    <div className='absolute left-0 w-full bg-white'>
+                        {options.map((option, index) => (
+                            <div
+                                key={index}
+                                className="m-4 flex justify-start items-center  bg-white text-fepGreen text-2xl  curson pointer "
+                                onClick={() => handleOptionClick(option.value)}
+                            >
+                                {option.label}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             )}
-
-
 
         </div>
     );
