@@ -1,10 +1,11 @@
 import './globals.css';
+import 'react-toastify/dist/ReactToastify.css';
 //import { Inter } from 'next/font/google'
 //const inter = Inter({ subsets: ['latin'] })
 import localFont from 'next/font/local';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const museo = localFont({
   src: '../public/fonts/Museo.ttf',

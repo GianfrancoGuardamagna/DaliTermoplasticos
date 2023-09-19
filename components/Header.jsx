@@ -1,9 +1,8 @@
 'use client'
+import Link from 'next/link'
 import { MdLocalPhone, MdMail } from 'react-icons/md'
 import DropdownNavbar from "./DropdownNavbar"
 import Navbar from "./Navbar"
-
-
 
 const Header = () => {
 
@@ -31,7 +30,7 @@ const Header = () => {
             </div>
 
             <div className="h-20 md:h-28 py-2 px-6 flex justify-between items-center bg-white font-museo lg:px-8 md:text-white md:bg-black">
-                <a
+                <Link
                     href='#landing'
                     onClick={(event) => handleClick(event)}
                     className="h-full w-1/4 md:w-2/12 bg-[url(/logo_reduccion.png)] sm:bg-[url(/logo_negro.png)] md:bg-[url(/logo_blanco.png)] bg-contain bg-no-repeat bg-start md:bg-center" />
@@ -42,8 +41,8 @@ const Header = () => {
                 </div>
 
                 <div className="hidden h-full w-1/12 md:flex md:justify-end md:items-end md:gap-2 md:pb-3">
-                    <a href='' className='w-9 h-9 flex items-center'><img src='/icon_instagram.svg' alt='insta' /></a>
-                    <a href='' className='w-9 h-9 flex items-center'><img src='/icon_facebook.svg' alt='face' /></a>
+                    <Link href='https://www.instagram.com/fepenvases' target="_blank" className='w-9 h-9 flex items-center'><img src='/icon_instagram.svg' alt='instagram' /></Link>
+                    <Link href='' className='w-9 h-9 flex items-center'><img src='/icon_facebook.svg' alt='face' /></Link>
                 </div>
             </div>
 

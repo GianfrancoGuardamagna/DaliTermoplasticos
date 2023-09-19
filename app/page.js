@@ -1,10 +1,10 @@
-import Contacto from './components/Contacto';
-import Landing from './components/Landing';
-import Nosotros from './components/Nosotros';
-import CategoriasProductos from './components/CategoriasProductos';
-import Sustentabilidad from './components/Sustentabilidad';
-import Header from './components/Header';
-import WhatsAppButton from './components/WhatsAppButton';
+import Contacto from '../components/Contacto';
+import Landing from '../components/Landing';
+import Nosotros from '../components/Nosotros';
+import Productos from '../components/Productos';
+import Sustentabilidad from '../components/Sustentabilidad';
+import Header from '../components/Header';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         </section>
 
         <section id='productos' className='w-screen h-[calc(100vh-112px)]'>
-          <CategoriasProductos />
+          <Productos />
           <WhatsAppButton />
         </section>
 
