@@ -4,7 +4,10 @@ import { useEffect, useState } from 'react'
 import { MdNavigateNext, MdNavigateBefore } from 'react-icons/md'
 
 const Carousel = () => {
-    const carouselImages = ['/carousel/c-img1.png', '/carousel/c-img2.png', '/carousel/c-img3.png']
+
+    const carouselImages = ['/carousel/carousel_1.png', '/carousel/carousel_2.png', '/carousel/carousel_3.png'];
+    const carouselImagesSm = ['/carousel/sm_carousel_1.png', '/carousel/sm_carousel_2.png', '/carousel/sm_carousel_3.png']
+
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrev = () => {
@@ -16,24 +19,46 @@ const Carousel = () => {
     };
 
     useEffect(() => {
+
         const interval = setInterval(() => {
             handleNext();
         }, 5000); // Cambiar de imagen cada 5 segundos en la versión móvil
 
         return () => {
+
             clearInterval(interval);
         };
     }, []);
+
+
+    const [windowWidth, setWindowWidth] = useState(0);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+        window.addEventListener('resize', handleResize);
+        setWindowWidth(window.innerWidth);
+        // Clean up the listener when the component unmounts
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const useSmImages = windowWidth >= 640; // Adjust the breakpoint as needed
+
+    const imagesArray = useSmImages ? carouselImagesSm : carouselImages;
+
 
     return (
         <div className='w-full h-[90%] md:h-[85%] relative md:flex md:justify-center'>
 
             <Image
                 alt={`Image ${currentIndex}`}
-                src={carouselImages[currentIndex]}
+                src={imagesArray[currentIndex]}
                 fill={true}
-                sizes='w-full'
-                className='object-cover'
+                sizes='h-full'
+                className='object-contain md:object-cover'
             />
 
             <span
@@ -48,7 +73,7 @@ const Carousel = () => {
             </span>
 
             <div className='hidden md:absolute md:-bottom-6 md:flex md:gap-6'>
-                {carouselImages.map((carouselImage, index) => {
+                {imagesArray.map((carouselImage, index) => {
                     return (
                         <div
                             key={index}
