@@ -25,7 +25,7 @@ const Header = () => {
                     <MdLocalPhone /><span>0223 481-4490</span>
                 </div>
                 <div className='flex items-center gap-1'>
-                    <MdMail /><span>fep@gmail.com</span>
+                    <MdMail /><span>feplasticos@yahoo.com.ar</span>
                 </div>
             </div>
 
@@ -35,14 +35,9 @@ const Header = () => {
                     onClick={(event) => handleClick(event)}
                     className="h-full w-1/4 md:w-2/12 bg-[url(/logo_reduccion.png)] sm:bg-[url(/logo_negro.png)] md:bg-[url(/logo_blanco.png)] bg-contain bg-no-repeat bg-start md:bg-center" />
 
-                <div className="h-full w-1/4 md:w-9/12 flex items-center justify-center md:pb-4 lg:pb-3">
+                <div className="h-full w-1/4 md:w-9/12 flex items-center justify-center  md:pb-4 lg:pb-3">
                     <Navbar />
                     <DropdownNavbar />
-                </div>
-
-                <div className="hidden h-full w-1/12 md:flex md:justify-end md:items-end md:gap-2 md:pb-3">
-                    <Link href='https://www.instagram.com/fepenvases' target="_blank" className='w-9 h-9 flex items-center'><img src='/icon_instagram.svg' alt='instagram' /></Link>
-                    <Link href='' className='w-9 h-9 flex items-center'><img src='/icon_facebook.svg' alt='face' /></Link>
                 </div>
             </div>
 

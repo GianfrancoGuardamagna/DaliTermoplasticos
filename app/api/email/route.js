@@ -4,21 +4,21 @@ import { Email } from '../../../components/Email';
 
 export async function POST(req, res) {
   const body = await req.json();
-  const { name, empresa, message, email, phone } = body;
+  const { nombre, empresa, mensaje, email, telefono } = body;
 
   const emailHtml = render(
     <Email
-      name={name}
+      nombre={nombre}
       empresa={empresa}
       email={email}
-      message={message}
-      phone={phone}
+      mensaje={mensaje}
+      telefono={telefono}
     />
   );
 
   const options = {
     from: smtpEmail,
-    to: smtpEmail,
+    to: 'icoraglio@yahoo.com',
     subject: 'Nuevo mensaje de FEP Website',
     html: emailHtml,
   };

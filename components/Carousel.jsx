@@ -51,7 +51,7 @@ const Carousel = () => {
 
 
     return (
-        <div className='w-full h-[90%] md:h-[85%] relative md:flex md:justify-center'>
+        <div className='w-full h-[97%] md:h-[85%] relative md:flex md:justify-center'>
 
             <Image
                 alt={`Image ${currentIndex}`}
@@ -72,7 +72,7 @@ const Carousel = () => {
                 <MdNavigateBefore size={90} />
             </span>
 
-            <div className='hidden md:absolute md:-bottom-6 md:flex md:gap-6'>
+            <div className='hidden md:absolute md:-bottom-7 md:flex md:gap-6'>
                 {imagesArray.map((carouselImage, index) => {
                     return (
                         <div

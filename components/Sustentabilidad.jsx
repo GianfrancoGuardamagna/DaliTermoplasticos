@@ -14,7 +14,7 @@ const Sustentabilidad = () => {
                     nuestras operaciones no dejen huella en este tesoro natural que compartimos con la
                     comunidad.
                 </p>
-                <div className='hidden sm:flex sm:w-[40%] bg-[url(/sm_sustentabilidad.png)] bg-contain bg-right bg-no-repeat md:h-[80%]' />
+                <div className='hidden sm:flex sm:w-[40%] sm:h-full bg-[url(/sm_sustentabilidad.png)] bg-contain bg-right bg-no-repeat md:h-[80%]' />
             </div>
         </div>
     )

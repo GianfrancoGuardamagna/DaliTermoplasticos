@@ -20,7 +20,7 @@ export default function Home() {
           <WhatsAppButton />
         </section>
 
-        <section id='productos' className='w-screen h-[calc(100vh-112px)]'>
+        <section id='productos' className='w-screen lg:h-[calc(100vh-112px)]'>
           <Productos />
           <WhatsAppButton />
         </section>

@@ -34,7 +34,7 @@ const DropdownNavbar = () => {
                         {options.map((option, index) => (
                             <div
                                 key={index}
-                                className="m-4 flex justify-start items-center  bg-white text-fepGreen text-2xl  curson pointer "
+                                className="m-4 flex justify-start items-center  bg-white text-fepGreen text-2xl"
                                 onClick={() => handleOptionClick(option.value)}
                             >
                                 {option.label}
