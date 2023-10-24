@@ -15,7 +15,7 @@ export function Email({ nombre, email, mensaje, telefono, empresa }) {
                 <Body>
                     <Heading style={{ color: '#499F83' }} >El siguiente mensaje fue enviado desde la pagina web de FEP</Heading>
                     <Text><strong>Nombre:</strong> {nombre}</Text>
-                    <Text><strong>Emopresa:</strong> {empresa}</Text>
+                    <Text><strong>Empresa:</strong> {empresa}</Text>
                     <Text><strong>Telefono:</strong> {telefono}</Text>
                     <Text><strong>Email:</strong> {email}</Text>
                     <Text><strong>Mensaje:</strong> {mensaje}</Text>

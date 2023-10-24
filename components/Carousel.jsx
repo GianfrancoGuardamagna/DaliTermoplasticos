@@ -57,6 +57,7 @@ const Carousel = () => {
                 alt={`Image ${currentIndex}`}
                 src={imagesArray[currentIndex]}
                 fill={true}
+                priority={true}
                 sizes='h-full'
                 className='object-contain md:object-cover'
             />
