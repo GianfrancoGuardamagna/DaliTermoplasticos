@@ -18,7 +18,7 @@ export async function POST(req, res) {
 
   const options = {
     from: smtpEmail,
-    to: 'lummorel@gmail.com',
+    to: smtpEmail,
     subject: 'Nuevo mensaje de FEP Website',
     html: emailHtml,
   };
