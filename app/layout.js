@@ -2,6 +2,7 @@ import './globals.css';
 import 'react-toastify/dist/ReactToastify.css';
 import localFont from 'next/font/local';
 import Footer from '../components/Footer';
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const museo = localFont({
   src: '../public/fonts/Museo.ttf',
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
+      <GoogleTagManager gtmId='GTM-WB4T4V2C'/>
     </html>
   );
 }
