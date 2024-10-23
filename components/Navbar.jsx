@@ -22,7 +22,7 @@ const Navbar = () => {
         // Observe the sections
         observer.observe(document.getElementById("landing"));
         observer.observe(document.getElementById("nosotros"));
-        observer.observe(document.getElementById("productos"));
+        observer.observe(document.getElementById("servicios"));
         observer.observe(document.getElementById("sustentabilidad"));
         observer.observe(document.getElementById("contacto"));
 
@@ -55,11 +55,11 @@ const Navbar = () => {
                 Nosotros
             </a>
             <a
-                href='productos'
-                onClick={(event) => handleNavClick(event, 'productos')}
-                className={activeSection === 'productos' ? 'underline' : ''}
+                href='servicios'
+                onClick={(event) => handleNavClick(event, 'servicios')}
+                className={activeSection === 'servicios' ? 'underline' : ''}
             >
-                Productos
+                Servicios
             </a>
             <a
                 href='sustentabilidad'

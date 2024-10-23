@@ -13,7 +13,7 @@ export function Email({ nombre, email, mensaje, telefono, empresa }) {
             <Head />
             <Tailwind>
                 <Body>
-                    <Heading style={{ color: '#499F83' }} >El siguiente mensaje fue enviado desde la pagina web de FEP</Heading>
+                    <Heading style={{ color: '#499F83' }} >El siguiente mensaje fue enviado desde la pagina web de Dali</Heading>
                     <Text><strong>Nombre:</strong> {nombre}</Text>
                     <Text><strong>Empresa:</strong> {empresa}</Text>
                     <Text><strong>Telefono:</strong> {telefono}</Text>

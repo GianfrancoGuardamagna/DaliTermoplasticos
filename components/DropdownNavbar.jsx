@@ -6,7 +6,7 @@ const DropdownNavbar = () => {
 
     const options = [
         { label: 'Nosotros', value: 'nosotros' },
-        { label: 'Productos', value: 'productos' },
+        { label: 'Servicios', value: 'servicios' },
         { label: 'Sustentabilidad', value: 'sustentabilidad' },
         { label: 'Contacto', value: 'contacto' },
     ];

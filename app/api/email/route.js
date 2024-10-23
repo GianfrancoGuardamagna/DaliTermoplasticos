@@ -1,6 +1,6 @@
-import { render } from '@react-email/components';
-import { transporter, smtpEmail } from '../../../utils/sendEmail';
-import { Email } from '../../../components/Email';
+import { render } from "@react-email/components";
+import { transporter, smtpEmail } from "../../../utils/sendEmail";
+import { Email } from "../../../components/Email";
 
 export async function POST(req, res) {
   const body = await req.json();
@@ -19,7 +19,7 @@ export async function POST(req, res) {
   const options = {
     from: smtpEmail,
     to: smtpEmail,
-    subject: 'Nuevo mensaje de FEP Website',
+    subject: "Nuevo mensaje de Dali Website",
     html: emailHtml,
   };
 
@@ -27,7 +27,7 @@ export async function POST(req, res) {
     // Send email using the transporter
     await transporter.sendMail(options);
   } catch (error) {
-    console.error('Failed to send email:', error);
+    console.error("Failed to send email:", error);
   }
-  return new Response('OK');
+  return new Response("OK");
 }

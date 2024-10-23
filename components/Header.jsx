@@ -22,10 +22,10 @@ const Header = () => {
 
             <div className='h-8 p-2 flex items-center justify-center gap-10 bg-black text-white text-sm md:hidden'>
                 <div className='flex items-center gap-1'>
-                    <MdLocalPhone /><span>0223 481-4490</span>
+                    <MdLocalPhone /><span>223 599-9980</span>
                 </div>
                 <div className='flex items-center gap-1'>
-                    <MdMail /><span>feplasticos@yahoo.com.ar</span>
+                    <MdMail /><span>dalitermoplasticos@gmail.com</span>
                 </div>
             </div>
 

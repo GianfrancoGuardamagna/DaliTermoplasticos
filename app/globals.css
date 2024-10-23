@@ -12,3 +12,21 @@ body {
   color: black;
   background: white;
 }
+
+.swal-popup {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.swal-title {
+  color: #20AD81;
+}
+
+.swal-content {
+  color: #000000;
+}
+
+.swal-confirm-button {
+  background-color: #20AD81;
+  color: #ffffff;
+}

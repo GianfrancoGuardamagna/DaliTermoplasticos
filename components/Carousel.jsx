@@ -5,8 +5,8 @@ import { MdNavigateNext, MdNavigateBefore } from 'react-icons/md'
 
 const Carousel = () => {
 
-    const carouselImages = ['/carousel/carousel_1.png', '/carousel/carousel_2.png', '/carousel/carousel_3.png'];
-    const carouselImagesSm = ['/carousel/sm_carousel_1.png', '/carousel/sm_carousel_2.png', '/carousel/sm_carousel_3.png']
+    const carouselImages = ['/carousel/carousel_1.png', '/carousel/carousel_2.png', '/carousel/carousel_3.png', '/carousel/carousel_4.png'];
+    const carouselImagesSm = ['/carousel/sm_carousel_1.png', '/carousel/sm_carousel_2.png', '/carousel/sm_carousel_3.png', '/carousel/sm_carousel_4.png']
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
