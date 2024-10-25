@@ -9,11 +9,15 @@ const DropdownNavbar = () => {
         { label: 'Servicios', value: 'servicios' },
         { label: 'Sustentabilidad', value: 'sustentabilidad' },
         { label: 'Contacto', value: 'contacto' },
+        { label: 'Fep Envases', value: 'fep envases' },
     ];
 
     const handleOptionClick = (value) => {
-        const section = document.getElementById(value);
-        if (section) {
+        if(value === "fep envases") {
+            setIsMenuOpen(!isMenuOpen)
+            window.open('https://fepenvases.com/', '_blank')
+        }else { 
+            let section = document.getElementById(value);
             setIsMenuOpen(!isMenuOpen)
             const offset = 112;
             const topPosition = section.offsetTop;

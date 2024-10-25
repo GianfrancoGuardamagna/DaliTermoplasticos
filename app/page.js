@@ -25,10 +25,7 @@ export default function Home() {
           <WhatsAppButton />
         </section>
 
-        <section
-          id="sustentabilidad"
-          className="w-screen h-[calc(100vh-112px)]"
-        >
+        <section id="sustentabilidad" className="w-screen min-h-screen">
           <Sustentabilidad />
           <WhatsAppButton />
         </section>

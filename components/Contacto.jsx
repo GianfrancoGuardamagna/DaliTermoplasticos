@@ -2,7 +2,7 @@ import ContactForm from './ContactForm';
 
 const Contacto = () => {
     return (
-        <div className='w-[90%] sm:w-[60%] md:w-[95%] lg:w-[80%] mx-auto h-full mt-8 flex flex-col justify-center md:flex-row md:justify-around items-center'>
+        <div className='w-[90%] sm:w-[60%] md:w-[95%] lg:w-[80%] mx-auto h-full mt-20 flex flex-col justify-center md:flex-row md:justify-around items-center'>
             <h1 className='flex justify-center py-4 font-museo text-4xl md:hidden'>Contacto</h1>
 
             <iframe
