@@ -51,24 +51,24 @@ function handleShow(material) {
 
 const Servicios = () => {
     return (
-        <div className='w-full h-full flex flex-col items-center'>
-            <h1 className='flex justify-center text-center font-museo text-4xl md:hidden'>¿Qué polímeros procesamos?</h1>
-            <div className='w-full h-full flex flex-col justify-center items-center'>
-                <p className='w-[90%] mx-auto pt-4 text-sm text-center md:text-left md:py-6 md:text-base lg:text-xl xl:text-2xl'>Haga click sobre los materiales para ver de que se trata</p>
-                <div className='flex flex-col items-center justify-center gap-8 mt-4 mb-16 sm:w-[90%] sm:gap-4 md:w-[80%] md:mt-0 lg:w-[95%]'>
+        <div className='w-full flex flex-col items-center xl:pt-6 xl:justify-center xl:bg-slate-200 xl:shadow-inner'>
+            <h1 className='flex justify-center text-center font-museo text-4xl'>¿Qué polímeros procesamos?</h1>
+            <div className='w-full flex flex-col justify-center items-center'>
+                <p className='w-[90%] mx-auto pt-4 text-sm text-center md:py-4 md:text-base lg:text-xl xl:text-2xl'>Haga click sobre los materiales para ver de qué se trata</p>
+                <div className='flex flex-col xl:flex-row items-center justify-center gap-8 mt-4 mb-16 xl:m-0 sm:w-[90%] sm:gap-24 md:w-[80%] lg:w-[95%]'>
                     <div className='text-center text-fepGreen font-museo text-lg cursor-pointer transform transition duration-500 hover:scale-110 xl:text-2xl'>
-                        <div className='w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[230px] md:h-[230px] xl:w-[280px] xl:h-[280px] my-2 rounded-3xl relative' onClick={() => handleShow("PEAD")}>
-                            <Image alt='Polietileno Alta Densidad' src='/servicios/PEAD.png' fill sizes='h-full' className='object-contain rounded-3xl' />
+                        <div className='w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[230px] md:h-[230px] xl:w-[280px] xl:h-[280px] my-2 rounded-3xl' onClick={() => handleShow("PEAD")}>
+                            <Image alt='Polietileno Alta Densidad' src='/servicios/PEAD.png' width={250} height={250} className='object-contain rounded-3xl' />
                         </div>
                     </div>
                     <div className='text-center text-fepGreen font-museo text-lg cursor-pointer transform transition duration-500 hover:scale-110 xl:text-2xl'>
-                        <div className='w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[230px] md:h-[230px] xl:w-[280px] xl:h-[280px] my-2 rounded-3xl relative' onClick={() => handleShow("PEBD")}>
-                            <Image alt='Polietileno Baja Densidad' src='/servicios/PEBD.png' fill sizes='h-full' className='object-contain rounded-3xl' />
+                        <div className='w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[230px] md:h-[230px] xl:w-[280px] xl:h-[280px] my-2 rounded-3xl' onClick={() => handleShow("PEBD")}>
+                            <Image alt='Polietileno Baja Densidad' src='/servicios/PEBD.png' width={250} height={250} className='object-contain rounded-3xl' />
                         </div>
                     </div>
                     <div className='text-center text-fepGreen font-museo text-lg cursor-pointer transform transition duration-500 hover:scale-110 xl:text-2xl'>
-                        <div className='w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[230px] md:h-[230px] xl:w-[280px] xl:h-[280px] my-2 rounded-3xl relative' >
-                            <Image alt='Polipropileno' src='/servicios/PP.png' fill sizes='h-full' className='object-contain rounded-3xl' onClick={() => handleShow("PP")} />
+                        <div className='w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[230px] md:h-[230px] xl:w-[280px] xl:h-[280px] my-2 rounded-3xl' >
+                            <Image alt='Polipropileno' src='/servicios/PP.png' width={250} height={250} className='object-contain rounded-3xl' onClick={() => handleShow("PP")} />
                         </div>
                     </div>
                 </div>

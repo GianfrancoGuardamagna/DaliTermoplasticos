@@ -3,7 +3,7 @@ import DoughnutChart from './torta'
 
 const Landing = () => {
     return (
-        <div className='w-vw mx-auto h-[calc(100vh-112px)] flex items-center flex-col'>
+        <div className='w-vw h-[calc(100vh-112px)] flex flex-col pt-0'>
             <Carousel />
         </div>
     )

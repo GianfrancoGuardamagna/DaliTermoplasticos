@@ -14,7 +14,7 @@ const DropdownNavbar = () => {
 
     const handleOptionClick = (value) => {
         if(value === "fep envases") {
-            setIsMenuOpen(!isMenuOpen)
+            setIsMenuOpen(!isMenuOpen)  
             window.open('https://fepenvases.com/', '_blank')
         }else { 
             let section = document.getElementById(value);
@@ -29,11 +29,11 @@ const DropdownNavbar = () => {
     };
 
     return (
-        <div className="md:hidden">
+        <div className="lg:hidden">
             <div className='curson pointer text-4xl' onClick={() => setIsMenuOpen(!isMenuOpen)}>☰</div>
 
             {isMenuOpen && (
-                <div className='absolute left-0 w-full h-screen mt-4 bg-black bg-opacity-80'>
+                <div className='absolute left-0 w-full h-screen mt-8 bg-black bg-opacity-80'>
                     <div className='absolute left-0 w-full bg-white'>
                         {options.map((option, index) => (
                             <div

@@ -51,7 +51,7 @@ const Carousel = () => {
 
 
     return (
-        <div className='w-full h-[97%] md:h-[85%] relative md:flex md:justify-center'>
+        <div className='w-full h-full pt-0 md:h-[85%] md:flex md:justify-center'>
 
             <Image
                 alt={`Image ${currentIndex}`}
@@ -63,7 +63,7 @@ const Carousel = () => {
             />
 
             <span
-                onClick={handlePrev}
+                onClick={handleNext}
                 className='hidden md:block md:z-10 md:absolute md:top-[calc(50%-30px)] md:right-2 text-fepGreen'>
                 <MdNavigateNext size={90} />
             </span>

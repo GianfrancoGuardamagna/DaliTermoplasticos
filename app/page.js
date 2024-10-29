@@ -15,12 +15,12 @@ export default function Home() {
           <Landing />
           <WhatsAppButton />
         </section>
-        <section id="nosotros" className="w-screen h-screen">
+        <section id="nosotros" className="w-screen h-full">
           <Nosotros />
           <WhatsAppButton />
         </section>
 
-        <section id="servicios" className="w-screen lg:h-[calc(100vh-112px)]">
+        <section id="servicios" className="w-screen h-full">
           <Servicios />
           <WhatsAppButton />
         </section>
