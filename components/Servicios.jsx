@@ -46,7 +46,34 @@ function handleShow(material) {
                 confirmButton: 'swal-confirm-button'
             }
         });
+    }if(material === 'compra') {
+        Swal.fire({
+            title: 'Comprar Material',
+            text: 'Si deseas saber los precios de nuestros productos y servicios, por favor contáctanos a través de nuestro formulario de contacto o a través de nuestro número de teléfono 223 599-9980. Estaremos encantados de atenderte y ofrecerte la mejor solución para tus necesidades.',
+            icon: 'info',
+            confirmButtonText: 'Cerrar',
+            customClass: {
+                popup: 'swal-popup',
+                title: 'swal-title',
+                content: 'swal-content',
+                confirmButton: 'swal-confirm-button'
+            }
+        });
+    }if(material === 'venta') {
+        Swal.fire({
+            title: 'Vender Material',
+            text: 'Si estás interesado en vendernos material plástico, las condiciones son las siguientes: \n\n El material debe estar limpio y seco. \n\n En lo posible, el material debe estar separado por tipo y color. \n\n El material debe estar libre de contaminantes. \n\n Si cumples con estas condiciones, por favor contáctanos para coordinar la recolección del material.',
+            icon: 'info',
+            confirmButtonText: 'Cerrar',
+            customClass: {
+                popup: 'swal-popup',
+                title: 'swal-title',
+                content: 'swal-content',
+                confirmButton: 'swal-confirm-button'
+            }
+        });
     }
+    
 }
 
 const Servicios = () => {
@@ -71,6 +98,10 @@ const Servicios = () => {
                             <Image alt='Polipropileno' src='/servicios/PP.png' width={250} height={250} className='object-contain rounded-3xl' onClick={() => handleShow("PP")} />
                         </div>
                     </div>
+                </div>
+                <div className='flex flex-col gap-5 md:flex-row md:w-full md:justify-around xl:justify-center md:px-28 xl:py-8 xl:pb-12 2xl:w-2/3 xl:gap-24'>
+                    <button className='bg-fepGreen text-white font-museo text-lg md:text-2xl py-2 md:py-4 px-4 md:px-8 rounded-lg transform transition duration-500 hover:scale-110' onClick={()=> handleShow("venta")}>Quiero Vender</button>
+                    <button className='bg-fepGreen text-white font-museo text-lg md:text-2xl py-2 md:py-4 px-4 md:px-8 rounded-lg transform transition duration-500 hover:scale-110' onClick={()=> handleShow("compra")} >Quiero Comprar</button>
                 </div>
             </div>
         </div>
