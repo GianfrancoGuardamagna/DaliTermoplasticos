@@ -47,7 +47,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className='hidden w-full h-full lg:flex flex-row justify-center gap-4 items-end md:text-xl lg:text-2xl xl:text-4xl xl:gap-4'>
+        <nav className='hidden w-full h-full lg:flex flex-row justify-center 2xl:justify-around gap-4 items-end md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl xl:gap-4'>
             <a
                 href='nosotros'
                 onClick={(event) => handleNavClick(event, 'nosotros')}

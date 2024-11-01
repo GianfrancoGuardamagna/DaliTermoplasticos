@@ -64,7 +64,7 @@ const Carousel = () => {
 
             <span
                 onClick={handleNext}
-                className='hidden md:block md:z-10 md:absolute md:top-[calc(50%-30px)] md:right-2 text-fepGreen'>
+                className='hidden md:block md:absolute md:top-[calc(50%-30px)] md:right-2 text-fepGreen'>
                 <MdNavigateNext size={90} />
             </span>
             <span
