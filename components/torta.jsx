@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Chart } from 'primereact/chart';
 import useWindowSize from '@/hooks/windowSize';
 
-export default function BasicDemo() {
+export default function Torta() {
     const size = useWindowSize()
     const [chartData, setChartData] = useState({});
     const [chartOptions, setChartOptions] = useState({});
@@ -15,7 +15,7 @@ export default function BasicDemo() {
             datasets: [
                 {
                     label: 'Toneladas recuperadas el 2024',
-                    data: [81.6, 240, 158.4],
+                    data: [250, 342, 408],
                     backgroundColor: ['rgb(73, 159, 131)', 'rgb(159, 224, 203)', "rgb(46,92,77)"],
                     borderColor: ['rgb(73, 159, 131)', 'rgb(159, 224, 203)', "rgb(46,92,77)"],
                     borderWidth: 1
@@ -48,9 +48,9 @@ export default function BasicDemo() {
         )
     }if(size === 'isDesktop'){
         return (
-            <div className="card h-full w-full flex flex-row justify-around">
+            <div className="card h-full w-full flex flex-row justify-around items-baseline xl:h-[500px]">
                 <Chart type="doughnut" className='h-96 w-96' options={chartOptions} data={chartData} />
-                <Chart type="bar" className='h-96 w-96' data={chartData} options={chartOptions} />
+                <Chart type="bar" className='h-full w-[800px] flex' data={chartData} options={chartOptions} />
             </div>
             )
     } 

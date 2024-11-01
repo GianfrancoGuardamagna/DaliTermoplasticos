@@ -15,7 +15,7 @@ export default function Home() {
           <Landing />
           <WhatsAppButton />
         </section>
-        <section id="nosotros" className="w-screen h-full">
+        <section id="nosotros" className="w-screen h-full xl:my-16 2xl:my-0">
           <Nosotros />
           <WhatsAppButton />
         </section>
@@ -30,7 +30,10 @@ export default function Home() {
           <WhatsAppButton />
         </section>
 
-        <section id="contacto" className="w-screen md:h-[calc(100vh-112px)]">
+        <section
+          id="contacto"
+          className="w-screen md:h-[calc(100vh-112px)] xl:h-1/4"
+        >
           <Contacto />
           <WhatsAppButton />
         </section>
