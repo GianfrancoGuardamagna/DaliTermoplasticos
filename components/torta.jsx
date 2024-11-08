@@ -8,6 +8,8 @@ export default function Torta() {
     const size = useWindowSize()
     const [chartData, setChartData] = useState({});
     const [chartOptions, setChartOptions] = useState({});
+    const [chartDataSecondary, setChartDataSecondary] = useState({});
+    const [chartOptionsSecondary, setChartOptionsSecondary] = useState({});
 
     useEffect(() => {
         const data = {
@@ -34,6 +36,31 @@ export default function Torta() {
         setChartOptions(options);
     }, []);
 
+    useEffect(() => {
+        const data = {
+            labels: ['FILM', 'CAJONES', 'CAÑOS', 'OTROS'],
+            datasets: [
+                {
+                    label: 'Porcentaje de productos recuperados',
+                    data: [65, 20, 8, 7],
+                    backgroundColor: ['rgb(73, 159, 131)', 'rgb(159, 224, 203)', "rgb(46,92,77)", "rgb(102, 187, 153)"],
+                    borderColor: ['rgb(73, 159, 131)', 'rgb(159, 224, 203)', "rgb(46,92,77)", "rgb(102, 187, 153)"],
+                    borderWidth: 1
+                }
+            ]
+        };
+        const options = {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        };
+
+        setChartDataSecondary(data);
+        setChartOptionsSecondary(options);
+    }, []);
+
     if(size === 'isMobile') {
         return (
             <div className="card">
@@ -50,7 +77,7 @@ export default function Torta() {
         return (
             <div className="card h-full w-full flex flex-row justify-around items-baseline xl:h-[500px]">
                 <Chart type="doughnut" className='h-96 w-96' options={chartOptions} data={chartData} />
-                <Chart type="bar" className='h-full w-[800px] flex' data={chartData} options={chartOptions} />
+                <Chart type="bar" className='h-full w-[800px] flex' data={chartDataSecondary} options={chartOptionsSecondary} />
             </div>
             )
     } 

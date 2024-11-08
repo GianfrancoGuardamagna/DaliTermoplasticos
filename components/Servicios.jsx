@@ -22,7 +22,7 @@ function handleShow(material) {
     if(material === 'PEBD') {
         Swal.fire({
             title: 'Polietileno de Baja Densidad',
-            text: 'El polietileno de baja densidad (PEBD) es un polímero termoplástico de baja densidad, con una alta resistencia a la tracción y a la flexión. Es un material muy versátil, con una amplia gama de aplicaciones en la industria, la construcción y el hogar. En Dali Termoplásticos procesamos PEBD de alta calidad, reciclado y virgen, para satisfacer las necesidades de nuestros clientes.',
+            text: 'El polietileno de baja densidad (PEBD) es un polímero termoplástico de baja densidad, con una alta resistencia a la tracción y a la flexión. Es un material muy versátil, con multiples útilidades en la industria. En Dali Termoplásticos procesamos PEBD de alta calidad, reciclado y virgen, para satisfacer las necesidades de nuestros clientes.',
             icon: 'info',
         confirmButtonText: 'Cerrar',
         customClass: {
@@ -36,7 +36,7 @@ function handleShow(material) {
     if(material === 'PP') {
         Swal.fire({
             title: 'Polipropileno',
-            text: 'El polipropileno (PP) es un polímero termoplástico de alta resistencia y dureza, con una alta resistencia química y a la abrasión. Es un material muy versátil, con una amplia gama de aplicaciones en la industria, la construcción y el hogar. En Dali Termoplásticos procesamos PP de alta calidad, reciclado y virgen, para satisfacer las necesidades de nuestros clientes.',
+            text: 'El polipropileno (PP) es un polímero termoplástico de alta resistencia y dureza, con una alta resistencia química y a la abrasión. Es un material muy versátil, conocido por su resistencia a la fatiga y su capacidad para soportar temperaturas elevadas. En Dali Termoplásticos procesamos PP de alta calidad, reciclado y virgen, para satisfacer las necesidades de nuestros clientes.',
             icon: 'info',
             confirmButtonText: 'Cerrar',
             customClass: {
@@ -49,7 +49,7 @@ function handleShow(material) {
     }if(material === 'compra') {
         Swal.fire({
             title: 'Comprar Material',
-            text: 'Si deseas saber los precios de nuestros productos y servicios, por favor contáctanos a través de nuestro formulario de contacto o a través de nuestro número de teléfono 223 599-9980. Estaremos encantados de atenderte y ofrecerte la mejor solución para tus necesidades.',
+            text: 'Si deseas saber los precios de nuestros productos y servicios, por favor contáctanos a través de nuestro formulario de contacto o a través de nuestro número de teléfono 223 599-9980. <br><br> Estaremos encantados de atenderte y ofrecerte la mejor solución para tus necesidades.',
             icon: 'info',
             confirmButtonText: 'Cerrar',
             customClass: {
@@ -62,14 +62,14 @@ function handleShow(material) {
     }if(material === 'venta') {
         Swal.fire({
             title: 'Vender Material',
-            text: 'Si estás interesado en vendernos material plástico, las condiciones son las siguientes: \n\n El material debe estar limpio y seco. \n\n En lo posible, el material debe estar separado por tipo y color. \n\n El material debe estar libre de contaminantes. \n\n Si cumples con estas condiciones, por favor contáctanos para coordinar la recolección del material.',
+            html: 'Si estás interesado en vendernos material plástico, las condiciones son las siguientes: <br><br> El material debe estar limpio y seco. <br><br> En lo posible, el material debe estar separado por tipo y color. <br><br> El material debe estar libre de contaminantes. <br><br> Si cumples con estas condiciones, por favor contáctanos para coordinar la recolección del material. Si cumples alguna de estas condiciones, por favor contáctanos para saber más.',
             icon: 'info',
             confirmButtonText: 'Cerrar',
             customClass: {
-                popup: 'swal-popup',
-                title: 'swal-title',
-                content: 'swal-content',
-                confirmButton: 'swal-confirm-button'
+            popup: 'swal-popup',
+            title: 'swal-title',
+            content: 'swal-content',
+            confirmButton: 'swal-confirm-button'
             }
         });
     }
