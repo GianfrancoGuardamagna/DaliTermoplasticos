@@ -15,7 +15,7 @@ const DropdownNavbar = () => {
     const handleOptionClick = (value) => {
         if(value === "fep envases") {
             setIsMenuOpen(!isMenuOpen)  
-            window.open('https://fepenvases.com/', '_blank')
+            window.open('https://fepenvases.com/','blank')
         }else { 
             let section = document.getElementById(value);
             setIsMenuOpen(!isMenuOpen)

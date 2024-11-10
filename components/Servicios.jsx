@@ -62,7 +62,7 @@ function handleShow(material) {
     }if(material === 'venta') {
         Swal.fire({
             title: 'Vender Material',
-            html: 'Si estás interesado en vendernos material plástico, las condiciones son las siguientes: <br><br> El material debe estar limpio y seco. <br><br> En lo posible, el material debe estar separado por tipo y color. <br><br> El material debe estar libre de contaminantes. <br><br> Si cumples con estas condiciones, por favor contáctanos para coordinar la recolección del material. Si cumples alguna de estas condiciones, por favor contáctanos para saber más.',
+            html: 'Si estás interesado en vendernos material plástico, las condiciones son las siguientes: El material debe estar limpio y seco. <br><br> En lo posible, el material debe estar separado por tipo y color. <br><br> El material debe estar libre de contaminantes. <br><br> Si cumples con estas condiciones, por favor contáctanos para coordinar la recolección del material. Si cumples alguna de estas condiciones, por favor contáctanos para saber más.',
             icon: 'info',
             confirmButtonText: 'Cerrar',
             customClass: {

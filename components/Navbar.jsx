@@ -77,6 +77,7 @@ const Navbar = () => {
             </a>
             <a
                 href='https://fepenvases.com/'
+                target="_blank"
             >
                 Fep Envases
             </a>
